@@ -24,13 +24,13 @@ app.use(publicDirectoryPath);
 app.get('', (req, res)=> {
     res.render('index', {
         title : "WEATHER TIME",
-        name: "Reid"
+        name: "Reid Naaykens"
     })
 })
 app.get('/about', (req, res)=> {
     res.render('about', {
         title : "About ME",
-        name: "Reid",
+        name: "Reid Naaykens",
         imgSrc: '/img/image.png'
     })
 })
@@ -38,7 +38,7 @@ app.get('/help', (req, res)=> {
     res.render('help', {
         title : "The Help Page",
         msg: "Welcome to the help page.",
-        name: "Reid"
+        name: "Reid Naaykens"
     })
 })
 
