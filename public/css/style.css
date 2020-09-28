@@ -74,3 +74,16 @@ button:hover{
     text-transform: uppercase;
     color:#94b5e5;
 }
+
+.forecast p{
+    font-size:20px
+}
+
+#icon{
+    width:100px;
+}
+
+.made{
+    color:#606060;
+    font-size:13px;
+}

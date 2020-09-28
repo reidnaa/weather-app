@@ -61,10 +61,12 @@ app.get('/weather', (req, res) => {
                 if(error){
                    return  res.send({ error })
                 }
+                
                 res.send({
                     location,
                     forecast:  data.message,
-                    icon: data.icon
+                    icon: data.icon,
+                    actual: data.actualSearchLocale
                 })
             })
         })

@@ -10,13 +10,13 @@ const forecast = (lat, long, callback) => {
             callback('unable to find location', undefined);
         } else {
 
-            
+            const actualSearchLocale = `${body.location.name}, ${body.location.region} ${body.location.country} `;
             const icon = body.current.weather_icons;
             const temp = body.current.temperature;
             const actual = body.current.feelslike;
             const description = body.current.weather_descriptions[0];
             const message = `${description}, it is currently ${temp} degrees and it feels like ${actual} degrees`;
-            callback(undefined, {message, icon})
+            callback(undefined, {message, icon, actualSearchLocale})
         }
     })
 }
