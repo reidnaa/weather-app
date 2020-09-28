@@ -87,3 +87,8 @@ button:hover{
     color:#606060;
     font-size:13px;
 }
+
+.about-text{
+    font-size: 18px;
+    line-height: 1.4;
+}
